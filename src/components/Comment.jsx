@@ -1,3 +1,5 @@
+import { Reply } from "./Reply";
+
 export const Comment = ({
   userImagePath,
   username,
@@ -29,8 +31,18 @@ export const Comment = ({
                 <span style={{ color: "#B0B3B8" }}>{likeNum}</span>
               </div>
             }
+            
           </div>
-          {/* map-loop render Reply component here */}
+         
+         {replies.map((reply, index) => (
+            < Reply  
+              userImagePath={reply.userImagePath} 
+              username={reply.username} 
+              replyText={reply.replyText}
+              likeNum={reply.likeNum}
+              key={index} 
+            />
+          ))}
         </div>
   );
 };

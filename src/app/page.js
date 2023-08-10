@@ -5,9 +5,6 @@ import { PostOwner } from "@/components/PostOwner";
 import { Reply } from "@/components/Reply";
 import { comments } from "@/libs/comments";
 
-
-
-
 export default function HomePage() {
   
   return (
@@ -34,20 +31,8 @@ export default function HomePage() {
             key={Com.id}
           />
         ))}
-
         
-        {/* Reply Example */}
-        {comments.map((com) => (
-          com.replies.map((reply, index) => (
-            <Reply  
-              userImagePath={reply.userImagePath} 
-              username={reply.username} 
-              replyText={reply.replyText}
-              likeNum={reply.likeNum}
-              key={index} 
-            />
-          ))
-        ))}
+        
       </div>
     </div>
   );
