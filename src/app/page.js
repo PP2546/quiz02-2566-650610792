@@ -14,7 +14,7 @@ export default function HomePage() {
         className="mx-auto p-3 rounded rounded-3 shadow-sm"
       >
         {/* Post Owner Example*/}
-        <PostOwner name="Chayanin Suatap 650610560" text="Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207" like="100 คน"/>
+        <PostOwner name="Phiphatphong Kawindong" id="650610792" text="Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207" like="100 คน"/>
 
         {/* Comment Example */}
         <div className="d-flex gap-2 my-2">

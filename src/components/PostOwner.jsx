@@ -10,7 +10,7 @@ export const PostOwner = (props) => {
         style={{ objectFit: "cover" }}
       />
       <span className="fw-semibold fs-5 text-white">
-        {props.name}
+        {props.name}{props.id}
       </span>
     </div>
 
