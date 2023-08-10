@@ -17,13 +17,15 @@ export const PostOwner = (props) => {
     <span className="text-white">
       {props.text}
     </span>
-
+    
+    {props.like > 0 &&
     <div className="d-flex align-items-center gap-1">
       <img src="/like.svg" width={20}></img>
       <span style={{ color: "#B0B3B8" }}>
         {props.like}
       </span>
     </div>
+    }
   <hr className="m-0 border" />
 </div>);
 };
