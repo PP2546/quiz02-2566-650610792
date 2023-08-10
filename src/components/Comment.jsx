@@ -1,3 +1,4 @@
+
 import { Reply } from "./Reply";
 
 export const Comment = ({
@@ -33,7 +34,11 @@ export const Comment = ({
             }
             
           </div>
-         
+          
+          <div
+            style={{ maxWidth: "700px", backgroundColor: "#242526" }}
+            className="mx-auto p-3 rounded rounded-3 shadow-sm"
+          >
          {replies.map((reply, index) => (
             < Reply  
               userImagePath={reply.userImagePath} 
@@ -43,6 +48,7 @@ export const Comment = ({
               key={index} 
             />
           ))}
+        </div>
         </div>
   );
 };
